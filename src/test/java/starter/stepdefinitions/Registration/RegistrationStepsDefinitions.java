@@ -31,7 +31,7 @@ public class RegistrationStepsDefinitions {
     @When("{actor}  registers a new account with valid personal information")
     public void  registersANewAccountWithValidPersonalInformation(Actor actor) {
         actor.attemptsTo(
-                Enter.theValue("juAN").into("input[placeholder='Name']")
+                Enter.theValue("juANs").into("input[placeholder='Name']")
 
         );
 

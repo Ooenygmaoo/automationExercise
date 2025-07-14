@@ -43,7 +43,6 @@ public class RegistrationStepsDefinitions {
                                 locatedBy("//b[normalize-space()='Enter Account Information']"))
                         .text().contains("ENTER ACCOUNT INFORMATION"));
 
-
     }
 
     @Then("{actor}should be logged in and able to delete the account successfully")

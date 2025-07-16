@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"93f059a3-b26c-4dcf-94ae-f5eab98ba570","feature":"User Registration Flow","scenario":"David completes account registration and deletion","start":1752683719818,"group":19,"content":"","tags":"","end":1752683741849,"className":"passed"}]);
-CucumberHTML.timelineGroups.pushArray([{"id":19,"content":"Thread[ForkJoinPool-2-worker-1,5,main]"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"85e460bc-2cf2-439b-9595-35983f4ab901","feature":"User Registration Flow","scenario":"David completes account registration and deletion","start":1752694663778,"group":1,"content":"","tags":"@register,","end":1752694687240,"className":"passed"},{"id":"3d6afc8f-5746-423e-8899-d7407a91bb0e","feature":"User Registration Flow","scenario":"David completes account registration and deletion","start":1752694687370,"group":1,"content":"","tags":"@register,","end":1752694704016,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

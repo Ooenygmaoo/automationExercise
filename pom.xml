@@ -15,7 +15,6 @@
         <junit-vintage-engine.version>5.11.0</junit-vintage-engine.version>
         <junit-platform-suite.version>1.11.0</junit-platform-suite.version>
         <cucumber-junit-platform-engine.version>7.16.1</cucumber-junit-platform-engine.version>
-        <encoding>UTF-8</encoding>
         <tags></tags>
         <webdriver.base.url></webdriver.base.url>
     </properties>
@@ -90,12 +89,19 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.10</version>
+            <version>1.5.13</version>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>3.23.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.9.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -13,6 +13,8 @@ public class RegisterLoginPage {
             .locatedBy("//input[@placeholder='Name']");
     public static Target INPUTEMAIL = Target.the("inputemail")
             .locatedBy("(//input[@placeholder='Email Address'])[2]");
+    public static Target BUTTONSIGNUP = Target.the("buttonsignup")
+            .locatedBy("//button[normalize-space()='Signup']");
 
     public static Target ENTERACCOUNTINFO = Target.the("enteraccountinfo")
             .locatedBy("//b[normalize-space()='Enter Account Information']");

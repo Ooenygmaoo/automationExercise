@@ -221,7 +221,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-07-2025 11:35:44</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-07-2025 14:38:26</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -236,7 +236,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    1 test
+                                    2 tests
 
                                     
 
@@ -312,54 +312,54 @@
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>1</td>
+                    <td>2</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jul 16, 2025 11:35:19</td>
+                    <td>Jul 16, 2025 14:37:43</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jul 16, 2025 11:35:41</td>
+                    <td>Jul 16, 2025 14:38:24</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>22s</td>
+                    <td>40s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>22s</td>
+                    <td>16s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>22s</td>
+                    <td>23s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>22s</td>
+                    <td>20s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>22s</td>
+                    <td>40s</td>
                 </tr>
                 </tbody>
             </table>
@@ -394,31 +394,33 @@
                                                                                             <a href="736b1aa347ad0cc02b60562823f1ec2654d77d4dedca53e5400dc635edd55b88.html"> User Registration Flow</a>
                                                                                     </td>
                                                                                     <td>1</td>
-                                                                                    <td>Given David is on the Automation Exercise home page
+                                                                                    <td>1: David completes account registration and deletion ({actor=David, inputname=David, email=david@micorreo.com, password=miclave134, days=15, months=2, year=1995, firstname=Pedro, lastname=Perez, company=miempresa, Address=fake adresss 123, country=United States, state=Florida, city=Miami, zipcode=2223, mobile=323223232})
+Given David is on the Automation Exercise home page
 David  opens the Register page
 When David  registers a new account with valid personal information
-David add user
+| David | david@micorreo.com | miclave134 | 15 | 2 | 1995 | Pedro | Perez | miempresa | fake adresss 123 | United States | Florida | Miami | 2223 | 323223232 |
+David,adds a new user
 David clicks on sigupElementLogin
 David should see sigupElement with text value that contains: <[New User Signup!]>
 David enters 'David' into inputname
 David enters 'david@micorreo.com' into inputemail
-David clicks on //button[normalize-space()='Signup']
+David clicks on buttonsignup
 David should see enteraccountinfo with text value that contains: <[ENTER ACCOUNT INFORMATION]>
 David clicks on gender
-David enters 'miclave1' into password
-David selects [Ljava.lang.String;@790478d7 in days
-David selects [Ljava.lang.String;@17274d4d in months
-David selects [Ljava.lang.String;@6a5b672a in year
+David enters 'miclave134' into password
+David selects [Ljava.lang.String;@42cc5460 in days
+David selects [Ljava.lang.String;@5f45bc8e in months
+David selects [Ljava.lang.String;@1214d23c in year
 David clicks on option
 David enters 'Pedro' into firstname
 David enters 'Perez' into lastname
-David enters 'Mi empresa' into company
+David enters 'miempresa' into company
 David enters 'fake adresss 123' into address
-David selects [Ljava.lang.String;@dbc98f1 in country
+David selects [Ljava.lang.String;@39851c5 in country
 David enters 'Florida' into state
 David enters 'Miami' into city
-David enters '33101' into zipcode
-David enters '3323232211' into mobilenumber
+David enters '2223' into zipcode
+David enters '323223232' into mobilenumber
 David clicks on buttonregister
 Then David should be logged in and able to delete the account successfully
 David delete user
@@ -427,8 +429,43 @@ David  clicks on continue
 David  clicks on deleteaccount
 David  should see accountdelete with text value that contains (ignoring case): <[Account Deleted!]>
 David  clicks on continue
+2: David completes account registration and deletion ({actor=Caro, inputname=Vegeta, email=Vegeta@micorreo.com, password=miclave133, days=23, months=10, year=2000, firstname=Juan, lastname=Diaz, company=cocacola, Address=miami north 12367, country=Canada, state=Quebec, city=Montreal, zipcode=3213, mobile=332132123})
+Given Caro is on the Automation Exercise home page
+Caro  opens the Register page
+When Caro  registers a new account with valid personal information
+| Vegeta | Vegeta@micorreo.com | miclave133 | 23 | 10 | 2000 | Juan | Diaz | cocacola | miami north 12367 | Canada | Quebec | Montreal | 3213 | 332132123 |
+Caro,adds a new user
+Caro clicks on sigupElementLogin
+Caro should see sigupElement with text value that contains: <[New User Signup!]>
+Caro enters 'Vegeta' into inputname
+Caro enters 'Vegeta@micorreo.com' into inputemail
+Caro clicks on buttonsignup
+Caro should see enteraccountinfo with text value that contains: <[ENTER ACCOUNT INFORMATION]>
+Caro clicks on gender
+Caro enters 'miclave133' into password
+Caro selects [Ljava.lang.String;@218f2f51 in days
+Caro selects [Ljava.lang.String;@900649e in months
+Caro selects [Ljava.lang.String;@151a6598 in year
+Caro clicks on option
+Caro enters 'Juan' into firstname
+Caro enters 'Diaz' into lastname
+Caro enters 'cocacola' into company
+Caro enters 'miami north 12367' into address
+Caro selects [Ljava.lang.String;@4df7b4ac in country
+Caro enters 'Quebec' into state
+Caro enters 'Montreal' into city
+Caro enters '3213' into zipcode
+Caro enters '332132123' into mobilenumber
+Caro clicks on buttonregister
+Then Caro should be logged in and able to delete the account successfully
+Caro delete user
+Caro  should see account created with text value that contains (ignoring case): <[Account Created!]>
+Caro  clicks on continue
+Caro  clicks on deleteaccount
+Caro  should see accountdelete with text value that contains (ignoring case): <[Account Deleted!]>
+Caro  clicks on continue
 </td>
-                                                                                    <td>1</td>
+                                                                                    <td>2</td>
                                                                                     <td>100%</td>
                                                                                     <td>
                                                                                             <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
@@ -438,7 +475,7 @@ David  clicks on continue
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
                                                                                                      style="width: 100%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="1"
+                                                                                                     aria-valuenow="2"
                                                                                                      title="100% success"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
@@ -458,11 +495,22 @@ David  clicks on continue
                 <h3>Tags</h3>
                     <div class="card">
                         <div class="card-body">
+                            <div>
+                                    <a href="b5a51fc64ff8ca83de06a356b9bd0e5c8cbde54af2b1e8e384a9228fd9a93a6f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Register&nbsp;&nbsp;&nbsp;2
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
                                 <h5 class="card-title">Context</h5>
                             <div>
                                     <a href="83a1614f3dda521b0b7f5f6481c9e8fca62028b7ee1d7022b7d38143cdeaeee1.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Mac&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Chrome, Mac&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -490,17 +538,17 @@ David  clicks on continue
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>22s</td>
+                    <td>40s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>1</td>
+                    <td>2</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>22s</td>
+                    <td>16s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -511,30 +559,30 @@ David  clicks on continue
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>22s</td>
+                    <td>23s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jul 16, 2025 11:35:19</td>
+                    <td>Jul 16, 2025 14:37:43</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>22s</td>
+                    <td>20s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jul 16, 2025 11:35:41</td>
+                    <td>Jul 16, 2025 14:38:24</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>22s</td>
+                    <td>40s</td>
                 </tr>
                 </tbody>
             </table>
@@ -562,17 +610,27 @@ David  clicks on continue
                                                                                 <a href="736b1aa347ad0cc02b60562823f1ec2654d77d4dedca53e5400dc635edd55b88.html">User Registration Flow</a>
                                                                         </td>
                                                                         <td data-order="David completes account registration and deletion">
-                                                                                    <a href="43d2ac4819024c5c8025121c6ae7e41c89b2b6f8a96e1a3b5695bb46e5d13405.html">David completes account registration and deletion</a>
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="43d2ac4819024c5c8025121c6ae7e41c89b2b6f8a96e1a3b5695bb46e5d13405.html">David completes account registration and deletion</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 2 passing test cases
+                                                                                    <br/>
                                                                         </td>
                                                                         <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-apple' title='Mac OS X'></i></span><span style="display:none">Chrome,Mac OS X</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>Given David is on the Automation Exercise home page
-When David  registers a new account with valid personal information
-Then David should be logged in and able to delete the account successfully
+                                                                        <td>Given <actor> is on the Automation Exercise home page
+When <actor>  registers a new account with valid personal information
+
+
+|<inputname> | <email> | <password> | <days> | <months> | <year> | <firstname> | <lastname> | <company> | <Address> | <country> | <state> | <city> | <zipcode> | <mobile>|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+Then <actor> should be logged in and able to delete the account successfully
 </td>
-                                                                        <td data-order="1752683719">11:35:19</td>
-                                                                        <td>22s 025ms</td>
+                                                                        <td data-order="1752694663">14:37:43</td>
+                                                                        <td>40s 224ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -598,11 +656,22 @@ Then David should be logged in and able to delete the account successfully
                 <h3>Tags</h3>
                     <div class="card">
                         <div class="card-body">
+                            <div>
+                                    <a href="b5a51fc64ff8ca83de06a356b9bd0e5c8cbde54af2b1e8e384a9228fd9a93a6f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Register&nbsp;&nbsp;&nbsp;2
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
                                 <h5 class="card-title">Context</h5>
                             <div>
                                     <a href="83a1614f3dda521b0b7f5f6481c9e8fca62028b7ee1d7022b7d38143cdeaeee1.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Mac&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Chrome, Mac&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -656,7 +725,7 @@ Then David should be logged in and able to delete the account successfully
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [1,0,0,0,0,0,0,0],
+                data: [2,0,0,0,0,0,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -752,7 +821,7 @@ Then David should be logged in and able to delete the account successfully
             datasets: [
                 {
                     label: 'Automated',
-                    data: [1,0,0,0,0,0,0,0],
+                    data: [2,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -835,7 +904,7 @@ Then David should be logged in and able to delete the account successfully
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','1','0','0','0','0','0'],
+                data: ['0','0','2','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -910,7 +979,7 @@ Then David should be logged in and able to delete the account successfully
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [1],
+                    data: [2],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {

@@ -1,8 +1,10 @@
 starter/task/RegisterUser/DeleteUser.class
-starter/ui/RegistrationPage/DeleteLoginPage.class
 starter/ui/registration/RegisterPage.class
 starter/CucumberTestSuite.class
+starter/util/GetInfoFromTable.class
+starter/ui/RegistrationPage/DeleteLoginPage.class
 starter/task/RegisterUser/AddUser.class
 starter/stepdefinitions/Registration/RegistrationStepsDefinitions.class
 starter/ui/RegistrationPage/RegisterLoginPage.class
 starter/stepdefinitions/ParameterDefinitions.class
+starter/models/RegisterModel.class

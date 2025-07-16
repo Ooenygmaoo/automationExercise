@@ -154,7 +154,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"User Registration Flow","type":"feature","href":"736b1aa347ad0cc02b60562823f1ec2654d77d4dedca53e5400dc635edd55b88.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e, \u003cspan class\u003d\u0027feature-count\u0027\u003e1 test case\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"User Registration Flow","type":"feature","href":"736b1aa347ad0cc02b60562823f1ec2654d77d4dedca53e5400dc635edd55b88.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e, \u003cspan class\u003d\u0027feature-count\u0027\u003e2 test cases\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -225,7 +225,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-07-2025 11:35</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-07-2025 14:37</span>
     <br style="clear:left"/>
 </div>
 
@@ -240,11 +240,22 @@
                         <div clas="table">
                             <div class="row">
 
-                                    <div class="col-sm-12">
+                                <div class="col-sm-8">
                                         <span>
                                             <h2><i class="bi bi-book"></i> Feature: User registration flow</h2>
                                         </span>
                                     </div>
+                                        <div class="col-sm-4">
+                                        <span class="feature-tags">
+                                            <p class="tag">
+                                                <span class="badge feature-tag tag-badge" style="background:default;">
+                                                        <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink"
+                                                                                               style="background:default;"
+                                                                                               href="b5a51fc64ff8ca83de06a356b9bd0e5c8cbde54af2b1e8e384a9228fd9a93a6f.html">register (tag)</a>
+                                                    </span>
+                                            </p>
+                                        </span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -294,8 +305,9 @@
                                                                             <span class="orphan-scenario-toc-entry">
                                                                                     <a href="#47eb82c3d4e7d768a953cb40dd7330d0d3e8dc384cac420b4a039cea4806edc5"
                                                                                        title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: David completes account registration and deletion
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario Outline: David completes account registration and deletion
                                                                                     </a>
+                                                                                        (2 examples)
                                                                                 </span>
                                                                         </td>
                                                                         <td>
@@ -331,7 +343,7 @@
                                             <div class="col-sm-12">
                                                 <h3>Scenarios</h3>
 
-                                                    <a name="48be0ef2-bad9-4461-86b1-d7bc970cf31c"></a>
+                                                    <a name="6ec04693-5acf-40d4-8309-2df036170394"></a>
                                                     <p class="rule-tags inline-tag">
                                                     </p>
 
@@ -342,7 +354,7 @@
                                                                 <div>
                                                                         <span class="scenario-heading">
                                                                             <a href="43d2ac4819024c5c8025121c6ae7e41c89b2b6f8a96e1a3b5695bb46e5d13405.html"
-                                                                               title="View test results">Scenario: David completes account registration and deletion</a>
+                                                                               title="View test results">Scenario Outline: David completes account registration and deletion</a>
                                                                         </span>
 
                                                                         <span class="example-tags inline-tag">
@@ -357,10 +369,30 @@
 
                                                             </div>
                                                             <div class="scenario-docs card-body">
-                                                                    <p>Given David is on the Automation Exercise home page</p>
-                                                                    <p>When David  registers a new account with valid personal information</p>
-                                                                    <p>Then David should be logged in and able to delete the account successfully</p>
+                                                                    <p>Given {actor} is on the Automation Exercise home page</p>
+                                                                    <p><p>When {actor}  registers a new account with valid personal information</p>
+<table>
+<thead>
+<tr><th>{inputname}</th><th>{email}</th><th>{password}</th><th>{days}</th><th>{months}</th><th>{year}</th><th>{firstname}</th><th>{lastname}</th><th>{company}</th><th>{Address}</th><th>{country}</th><th>{state}</th><th>{city}</th><th>{zipcode}</th><th>{mobile}</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+</p>
+                                                                    <p>Then {actor} should be logged in and able to delete the account successfully</p>
                                                                 <div class="examples">
+                                                                        <p><p>Examples:</p>
+<blockquote>
+</blockquote>
+<div class='example-table-in-scenario'><table>
+<thead>
+<tr><th>actor</th><th>inputname</th><th>email</th><th>password</th><th>days</th><th>months</th><th>year</th><th>firstname</th><th>lastname</th><th>company</th><th>Address</th><th>country</th><th>state</th><th>city</th><th>zipcode</th><th>mobile</th><th> </th></tr>
+</thead>
+<tbody>
+<tr><td>David</td><td>David</td><td>david@micorreo.com</td><td>miclave134</td><td>15</td><td>2</td><td>1995</td><td>Pedro</td><td>Perez</td><td>miempresa</td><td>fake adresss 123</td><td>United States</td><td>Florida</td><td>Miami</td><td>2223</td><td>323223232</td><td><a href='43d2ac4819024c5c8025121c6ae7e41c89b2b6f8a96e1a3b5695bb46e5d13405.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
+<tr><td>Caro</td><td>Vegeta</td><td>Vegeta@micorreo.com</td><td>miclave133</td><td>23</td><td>10</td><td>2000</td><td>Juan</td><td>Diaz</td><td>cocacola</td><td>miami north 12367</td><td>Canada</td><td>Quebec</td><td>Montreal</td><td>3213</td><td>332132123</td><td><a href='43d2ac4819024c5c8025121c6ae7e41c89b2b6f8a96e1a3b5695bb46e5d13405.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
+</tbody>
+</table></div>
+</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -414,17 +446,17 @@
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>22s</td>
+                    <td>40s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>1</td>
+                    <td>2</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>22s</td>
+                    <td>16s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -435,30 +467,30 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>22s</td>
+                    <td>23s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jul 16, 2025 11:35:19</td>
+                    <td>Jul 16, 2025 14:37:43</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>22s</td>
+                    <td>20s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jul 16, 2025 11:35:41</td>
+                    <td>Jul 16, 2025 14:38:24</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>22s</td>
+                    <td>40s</td>
                 </tr>
                 </tbody>
             </table>
@@ -485,13 +517,16 @@
                                                                             <a href="#">User Registration Flow</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="43d2ac4819024c5c8025121c6ae7e41c89b2b6f8a96e1a3b5695bb46e5d13405.html">David completes account registration and deletion</a>
+                                                                        <i class="bi bi-table" title="Data Driven Scenario"> <a href="43d2ac4819024c5c8025121c6ae7e41c89b2b6f8a96e1a3b5695bb46e5d13405.html">David completes account registration and deletion</a>
+                                                                            <br/>
+                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 2 passing test cases
+                                                                                <br/>
                                                                     </td>
                                                                     <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-apple' title='Mac OS X'></i></span><span style="display:none">Chrome,Mac OS X</span>
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>11:35:19</td>
-                                                                    <td>22s 025ms</td>
+                                                                    <td>14:37:43</td>
+                                                                    <td>40s 224ms</td>
                                                                     <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
@@ -515,11 +550,22 @@
                 <h3>Tags</h3>
                     <div class="card">
                         <div class="card-body">
+                            <div>
+                                    <a href="b5a51fc64ff8ca83de06a356b9bd0e5c8cbde54af2b1e8e384a9228fd9a93a6f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Register&nbsp;&nbsp;&nbsp;2
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
                                 <h5 class="card-title">Context</h5>
                             <div>
                                     <a href="83a1614f3dda521b0b7f5f6481c9e8fca62028b7ee1d7022b7d38143cdeaeee1.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Mac&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Chrome, Mac&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -567,7 +613,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 1}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 2}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -662,7 +708,7 @@
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 1}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 2}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -758,7 +804,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [1,0,0,0,0,0,0,0],
+                    data: [2,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -841,7 +887,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','1','0','0','0','0','0'],
+                data: ['0','0','2','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
